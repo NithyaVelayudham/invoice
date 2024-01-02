@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/invoice icon.png"> 
+    <title>Invoice-Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+   <h1>invoice generator</h1>
+   <section id="invoice-generator">
+<header>
+   <div class="header-btn">
+<button class="btn"> Invoice generator supports multiple languages now.
+<span>🇺🇸🇪🇸🇮🇹🇩🇪🇫🇷🇸🇪🇮🇩🇳🇱🇨🇿</span>
+         </button>   
+   </div>
+</header>
+<main>
+   <div class="container" id="container">
+ <div class="invoice" id="invoice">
+   <nav class="navbar">
+      <div class="logo">
+         INVOICE
+         <br>
+         <button class="logo-btn">Logo - Click to Upload</button>
+      </div>
+      <div class="nav-icon">
+         <ul class="nav-links">
+           
+      <li>
+         <i class="fa fa-cog"></i>
+      </li>
+      <li>
+         <input type="checkbox" id="check">
+         <label for="check">
+            <i class="fa fa-toggle-off off" id="off"></i>
+            <i class="fa fa-toggle-on on" id="on"></i>
+         </label>
+      </li>
+      <li><i class="fa fa-regular fa-moon"></i></li>
+         </ul>
+      </div>
+ </nav> 
+ <div id="form-box">
+   <div class="seller">
+   <h3 class="txt-h3">Seller</h3>
+   <form action="" class="f1">
+      <div class="seller-label">
+         <label for="" id="label-text">Company</label>
+<br>
+<label for="" id="label-text">Address</label>
+<br>
+<label for="" id="label-text">Zip</label>
+<br>
+<label for="" id="label-text">City</label>
+<br>
+<label for="" id="label-text">State</label>
+<br>
+<label for="" id="label-text">Country</label>
+      </div>
+      <div class="seller-input">
+<input type="text" id="input-text" placeholder="e.g. Apple incorpotion">
+<input type="text" id="input-text" placeholder="e.g. Bennington street22">
+<input type="text" id="input-text" placeholder="e.g. 234523">
+<input type="text" id="input-text" placeholder="e.g. Seattle">
+<input type="text" id="input-text" placeholder="e.g. Washington">
+<input type="text" id="input-text" placeholder="e.g. USA">
+      </div>
+   </form>
+</div>
+<div class="buyer">
+   <h4 class="txt-h3">Buyer</h4>
+   <form action="" class="f2">
+      <div class="buyer-label">
+         <label for="" id="label-text">Company</label>
+<br>
+<label for="" id="label-text">Address</label>
+<br>
+<label for="" id="label-text">Zip</label>
+<br>
+<label for="" id="label-text">City</label>
+<br>
+<label for="" id="label-text">State</label>
+<br>
+<label for="" id="label-text">Country</label>
+      </div>
+      <div class="buyer-input">
+         <input type="text" id="input-text" placeholder="e.g. Apple incorpotion">
+<input type="text" id="input-text" placeholder="e.g. Bennington street22">
+<input type="text" id="input-text" placeholder="e.g. 234523">
+<input type="text" id="input-text" placeholder="e.g. Seattle">
+<input type="text" id="input-text" placeholder="e.g. Washington">
+<input type="text" id="input-text" placeholder="e.g. USA">
+      </div>
+   </form>
+</div>
+<h3 class="addfields"><b>Custom fields</b>
+   <a href="#">Add Custom fields</a>
+</h3>
+ </div>
+<div class="details" id="details">
+<div class="details1">
+   <form action="" class="f3">
+<div class="details-label">
+<label for="" id="label-text">Invoice No.</label>
+<br>
+<label for="" id="label-text">Invoice Date</label>
+<br>
+<label for="" id="label-text">Due Date</label>
+      </div>
+<div class="details-input">
+<input type="text" id="input-text" 
+placeholder="invoice number">
+<input type="date" id="input-text1"
+ value="issue date">
+ <br>
+<input type="date" id="input-text1"
+placeholder="invoice number">
+ </div>
+   </form>
+</div>
+ <div class="details2"></div>
+</div>
+       <!--Description-->
+<div class="Description" id="description">
+   <div class="des-item">
+   <div class="item">
+<form action="" class="f4">
+<label for="" class="des-label">Description</label>
+<br>
+<input type="text" id="des-input" 
+width="50%" height="10%" value="Sample item" >
+</form>
+   </div>
+   <div class="price">
+      <form action="" class="f5">
+<div class="price-label">
+   <label for="">Qty</label>
+   <label for="">Price</label>
+   <label for="">Sub Total</label>
+   </div>
+<div class="price-input">
+   <input type="text"  value="1" 
+   class="p-input">
+   <input type="text"  value="EUR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10"
+   class="p-input">
+   <input type="text" 
+    value="EUR&nbsp;&nbsp;&nbsp;10.00" class="p-input">
+   <button class="price-button"><i class="fa fa-plus"></i></button>
+</div>
+      </form>
+   </div>
+</div>
+   <div class="des-area">
+   <textarea  cols="30" rows="4" placeholder=""
+ id="tarea-text"></textarea>
+</div>
+
+</div>
+<br>
+<hr>
+
+          <!--Notes & Terms-->
+<div id="notes-terms">
+   <div class="notes">
+      <label for="" class="label1">Notes</label>
+      <br>
+      <textarea  cols="30" rows="8" 
+      id="tarea-text1"></textarea>
+      <br>
+      <label for="" class="label1">Terms</label>
+      <br>
+      <textarea  cols="30" rows="8" 
+      id="tarea-text1"></textarea>
+   </div>
+<div  class="purches">
+   <div id="purches">
+   <ul class="purches-detail">
+    <li>
+      <input type="checkbox" id="discount">
+      <br>
+      <label for="discount" class="dis">
+         <i class="fa fa-toggle-off " id="toggle-off"></i>
+         <i class="fa fa-toggle-on " id="toggle-on"></i>
+      <br>
+      Discount     
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="tax">
+      <br>
+      <label for="tax" class="tax">
+         <i class="fa fa-toggle-off " id="toggle-off"></i>
+         <i class="fa fa-toggle-on " id="toggle-on"></i>
+      <br>
+      Tax    
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="ship">
+      <br>
+      <label for="ship" class="ship">
+         <i class="fa fa-toggle-off " id="toggle-off"></i>
+         <i class="fa fa-toggle-on " id="toggle-on"></i>
+      <br>
+      Shipping     
+      </label>
+    </li>
+      </ul>
+  <div class="total">
+   <ul class="subtotal">
+<li>Sub Total</li>
+<li>EUR 10.00</li>
+   </ul>
+<ul class="discount1">
+<li style="color: gray;">Discount</li>
+<li><i class="fa fa-refresh"></i>
+   <button>EUR&nbsp;10</button>
+</li>
+</ul>
+<ul class="tax1">
+   <li style="color: gray;">Tax</li>
+   <li><i class="fa fa-refresh"></i>
+      <button>EUR&nbsp;10</button>
+   </li>
+   </ul>
+   <ul class="ship1">
+      <li style="color: gray;">Shipping</li>
+      <li>
+         <button>EUR&nbsp;10</button>
+      </li>
+      </ul>
+
+<br><hr><br>
+<ul class="totalamt">
+<li>Total Amount</li>
+<li>EUR 10</li>
+</ul>
+  </div>
+   </div>
+   </div>
+</div>
+</div>
+ 
+
+  <!--new invoice-->
+ 
+<div class="new-invoice" id="new-invoice">
+<div class="new-button">
+   <button class="new-btn1">
+      <i class="fa-thin fa-plus"></i>
+ New Invoice</button>
+ <br>
+ <button class="new-btn2">
+   <i class="fa-regular fa-folder"></i>
+    Save invoice</button>
+    <br>
+  <button class="new-btn3">
+   <i class="fa fa-thin fa-file-invoice-dollar"></i>
+  Generate PDF invoice</button>
+  <br> 
+  <div class="new-btn4">
+   <button class="export">Export</button>
+   <button class="import">Import</button>
+  </div>
+  <br>
+  <button class="new-btn5">
+   <i class="fa-regular fa-circle-dot"></i>
+   Missing a feature?</button>
+   <form action="" class="new-btn6">
+      <label for="Currency">Currency</label>
+      <br>
+      <select id="Currency">
+        <option value="EUR">EUR</option>
+        <option value="FJD">FJD-Fiji Dollar</option>
+        <option value="GEL">GEL-Lari</option>
+        <option value="AED">UAE-Dirham</option>
+        <option value="AFN">AFN-Afghani</option>
+        <option value="ALL">Lek</option>
+        <option value="AMD">Armenian Dram</option>
+      </select>
+   </form>
+   <br>
+   <form action="" class="new-btn7">   
+   <label for="language">Language</label>
+<br>
+ <select id="language">
+  <option value="English">English</option>
+  <option value="French">French</option>
+  <option value="German">German</option>
+  <option value="Italian">Italian</option>
+  <option value="Spanish">Spanish</option>
+  <option value="Romanian">Romanian</option>
+ </select>
+   </form>
+   <br>
+   <hr>
+   <br>
+   <div class="saved-invoice">
+      <label for="">Saved invoice</label>
+     <br> <button class="saved-btn">
+         No Saved invoice Found</button>
+   </div>
+</div>
+</div> 
+      
+</div>
+</main>
+
+
+<!--about section-->
+<div id="about">
+  <div class="about">
+   <p class="p1">You want to run your business running smoothly, right? Then you must keep your bills updated. A free invoice generator can be helpful in this situation.</p>
+<p class="p2">This invoice generator is free and 
+   privacy-based. Here are the features offered 
+   to you:</p>
+<ul class="about-list">
+<li>Define Sender and Recipient:
+   <p class="p">The invoice generator allows users to input their information as the sender and recipient effortlessly. All crucial fields are included: Name, Address, City, and Country. If you need additional information like VAT number, email, etc.,
+    you can use custom fields for this.</p></li>
+    <li>Invoice Date and Due Date:
+    <p class="p">Users can set the invoice and due 
+      dates, ensuring clarity and timeliness in 
+      payment expectations. This function helps 
+      with better money management and makes it 
+      less likely that payments will be late 
+      (hopefully :)).</p>  
+   </li>
+   <li>Local Storage and Privacy:
+     <p class="p">Data privacy is paramount, 
+      and this invoice generator addresses this
+       concern by saving the data in local storage.
+        Users can confidently create and manage 
+        invoices, knowing their information is kept 
+        secure.</p> 
+   </li>
+   <li>PDF Invoice Generation:
+    <p class="p"> The tool offers the ability to
+      generate professional-looking PDF invoices.
+       I'm currently working on additional templates
+        for PDFs with different layouts.</p> 
+   </li>
+   <li>Import and Export Support:
+   <p class="p"> The tool supports importing and exporting
+      invoices in a simple text file format, 
+      making it convenient to transfer invoice
+       data across platforms or keep backups of
+        essential records.</p>  
+   </li>
+   <li>Custom Fields and Notes:
+     <p class="p">Users can include custom fields like
+      VAT, bank information, and other relevant
+       details. Additionally, fields for notes and
+        terms allow for clear communication and 
+        additional information in the invoice.</p> 
+     </li>
+      <li>Discounts, Taxes, and Shipping Prices:
+       <p class="p">This invoice generator offers a
+         complete invoicing solution by supporting 
+         shipping costs, taxes, and discounts. Both 
+         percentage and amount are supported.</p>  
+      </li>
+      <li>Local Save and Load Functionality:
+        <p class="p"> By enabling users to save and load their 
+         invoices locally, the solution improves 
+         accessibility and gradually makes effective 
+         invoice administration easier.</p> 
+         </li>
+         <li>Multi-Currency Support:
+          <p class="p"> I included all world currencies to ensure
+            that users from all over the world can utilize the tool. Now it's a flexible and universally 
+            applicable billing solution.</p> 
+         </li>
+</ul>
+</div> 
+
+</div>
+   </section>
+
+<section  id="footer">
+<div class="footer">
+
+   <div class="footer-logo">
+ <ul>
+   <li> <h4>Invoice Generator</h4></li>
+   <li>|</li>
+   <li> <p>© 2023 by Csaba Kissi</p></li>
+  </ul>   
+   </div>
+   <div class="footer-icon">
+<ul>
+   <li><i class="fa-brands fa-twitter"></i></li>
+<li><i class="fa-brands fa-square-github"></i></li>
+<li><i class="fa-brands fa-dribbble"></i></li>
+</ul>
+   </div>
+</div>
+</section>
+   
+  
+</body>
+</html>
